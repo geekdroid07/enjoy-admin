@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "miembros",
+  "info": {
+    "singularName": "miembro",
+    "pluralName": "miembros",
+    "displayName": "Miembro",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "unique": true,
+      "required": true
+    },
+    "estado": {
+      "type": "boolean"
+    },
+    "Influencer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::influencer.influencer",
+      "inversedBy": "Miembros"
+    }
+  }
+}

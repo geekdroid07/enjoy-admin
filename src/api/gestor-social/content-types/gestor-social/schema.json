@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gestor_socials",
+  "info": {
+    "singularName": "gestor-social",
+    "pluralName": "gestor-socials",
+    "displayName": "Gestor social",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "unique": true,
+      "required": true
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "Influencers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::influencer.influencer"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "memberships",
+  "info": {
+    "singularName": "membership",
+    "pluralName": "memberships",
+    "displayName": "MEMBERSHIP"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MEMBERSHIP": {
+      "type": "decimal"
+    }
+  }
+}

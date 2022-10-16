@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "influencers",
+  "info": {
+    "singularName": "influencer",
+    "pluralName": "influencers",
+    "displayName": "Influencer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "unique": true,
+      "required": true
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "Miembros": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::miembro.miembro",
+      "mappedBy": "Influencer"
+    }
+  }
+}
